@@ -58,7 +58,7 @@ function fila(factura) {
   tbody.innerHTML += template_fila;
 }
 
-// Función para mostrar u ocultar el modal
+// para mostrar u ocultar el modal
 function toggleModal() {
   modal.classList.toggle("show");
 }
@@ -66,7 +66,7 @@ function toggleModal() {
 //para agregar una nueva factura
 function agregarFactura(e) {
   e.preventDefault();
-  // Obtener los valores del formulario
+
   const formData = new FormData(form);
   const nuevaFactura = {
     id: facturas.length > 0 ? facturas[facturas.length - 1].id + 1 : 1,
