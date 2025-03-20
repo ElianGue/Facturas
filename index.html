@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Contactos</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="./js/main.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Facturas</h1>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li id="todos" class="list_item">Todos</li>
+                <li id="pendientes" class="list_item">Pendientes</li>
+                <li id="pagada" class="list_item">Pagadas</li>
+            </ul>
+        </nav>
+
+        <table id="tablaFacturas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Número Factura</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Fecha</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>F001</td>
+                    <td>Compra de muebles de oficina</td>
+                    <td style="color: #00ce00;">pagada</td>
+                    <td>12-10-2023</td>
+                    <td><button class="action">Del</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>F002</td>
+                    <td>Suscripción a servicio de internet</td>
+                    <td style="color: #ff0000;">pendiente</td>
+                    <td>05-02-2024</td>
+                    <td><button>Del</button></td>
+                </tr> -->
+            </tbody>
+        </table>
+        <button class="addBtn" id="addContactBtn">+</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Agregar Factura</h2>
+          <form id="contactForm">
+            <label for="factura">Número de Factura:</label>
+            <input type="text" id="factura" name="factura" required>
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <button type="submit">Agregar</button>
+          </form>
+        </div>
+      </div>
+</body>
+
+</html>
